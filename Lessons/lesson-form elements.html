@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson-form elements</title>
+  </head>
+  <body>
+    <h1>Lesson-form elements</h1>
+    <form>
+      <label for=" First-name">Name</label>
+      <hr />
+      <br />
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="5" />
+      <br />
+      <br />
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" />
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <!--------textarea----------->
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+    <br />
+    <br />
+    <!--------button----------->
+    <button type="submit">Submit</button>
+    <button type="button" onclick="alert('Nadun Sankalpa')"> Click me</button>
+    <br />
+    <br />
+    
+    <!-------password---------->
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password" />
+    <br />
+    <br />
+
+    <!-------date---------->
+    <label for="date">Date</label>
+    <input type="date" name="date" id="date" />
+    <br />
+    <br />
+
+    <!-------radio-button---------->
+    <label for="radio">Male</label>
+    <input type="radio" name="gender" id="Male" />
+    <label for="radio">Female</label>
+    <input type="radio" name="gender" id="Female" />
+    <br />
+    <br />
+
+    <!-------time---------->
+    <label for="time">Time</label>
+    <input type="time" name="time" id="time" />
+    <br />
+    <br />
+
+    <!-------range---------->
+    <label for="range">Range</label>
+    <input type="range" name="range" id="range" />
+    <br />
+    <br />
+
+    <!-------color---------->
+    <label for="color">Color</label>
+    <input type="color" name="color" id="color" />
+    <br />
+    <br />
+
+    <!-------file---------->
+    <label for="file">File</label>
+    <input type="file" name="file" id="file" />
+    <br />
+    <br />
+
+    <!-------checkbox---------->
+    <label for="checkbox">Checkbox</label>
+    <input type="checkbox" name="checkbox" id="checkbox" />
+    <br />
+    <br />
+
+    <!-------select---------->
+    <label for="select">Select</label>
+    <select name="Technology" id="tech">
+      <option value="java">Java</option>
+      <option value="HTML">HTML</option>
+      <option value="Python">Python</option>
+    </select>
+    <br />
+    <br />
+
+    <!-------fieldset & legend---------->
+    <fieldset>
+      <legend>Fieldset</legend>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <label for="name">Second - Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your Second name">
+    </fieldset>
+    <br />
+    <br />
+
+    <!-------form--------->
+    <form action="/submit-form" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <br />
+      <br />
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required/>
+      <br />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+
+  </body>
+</html>

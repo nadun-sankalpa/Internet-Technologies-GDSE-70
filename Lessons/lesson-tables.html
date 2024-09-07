@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson-Tables</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lesson-Tables</h1>
+    <b>========Table Structure=======</b>
+    <br />
+    <table>
+      <thead>
+        <tr>
+          <th>First-Name</th>
+          <th>Second-Name</th>
+          <th>Age</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Nadun</td>
+          <td>Sankalpa</td>
+          <td>18</td>
+          <td>0712345678</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>28</td>
+          <td>0712345678</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <b>========Table wth colspan=======</b>
+
+    <table style="width: 400px; height: 400px; text-align: center">
+      <tr>
+        <td colspan="2">1</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td colspan="2">6</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td colspan="3">10</td>
+      </tr>
+      <tr>
+        <td colspan="4">13</td>
+      </tr>
+    </table>
+
+    <hr />
+    <b>========Table wth rowspan=======</b>
+    <table style="width: 400px; height: 400px; text-align: center">
+      <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>7</td>
+        <td rowspan="3">8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td rowspan="2">10</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>13</td>
+
+        <td>15</td>
+      </tr>
+    </table>
+  </body>
+</html>

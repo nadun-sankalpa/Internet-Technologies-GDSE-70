@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    /*------CSS-SELECTORS-------*/
+    h2 {
+      color: rgb(36, 187, 6);
+    }
+
+    /*------ID-SELECTORS-------*/
+    .text {
+      color: rgb(240, 6, 6);
+    }
+
+    /*------CLASS-SELECTORS-------*/
+    #main-paragraph {
+      color: rgb(6, 80, 240);
+    }
+
+    /*------Attribute-SELECTORS-------*/
+    a[target="_blank"] {
+      color: rgb(240, 6, 6);
+    }
+
+    /*-------Descdendent-SELECTORS-------*/
+    div p{
+      color: rgb(255, 6, 234);
+    }
+
+    /*-------Child-SELECTORS-------*/
+    ul > li {
+      color: rgb(8, 190, 23);
+      list-style-type: square;
+    }
+
+    /*-------Adjacent-SELECTORS-------*/
+    h2 + p {
+      color: rgb(190, 8, 8);
+    }
+
+    /*-------General-SELECTORS-------*/
+    h1 ~ p {
+      color: rgb(241, 102, 9);
+    }
+
+    /*-------Pseudo-SELECTORS-------*/
+    li:first-child {
+      color: rgb(10, 51, 235);
+    }
+
+    li:last-child {
+      color: rgb(235, 10, 10);
+    }
+
+    li:nth-child(odd) {
+      color: rgb(33, 10, 235);
+    }
+
+    ul:hover {
+      background-color: rgb(137, 211, 230);
+    }
+    
+    /*------ psuedo element-------*/
+    p::first-letter{
+      font-size: 40px;
+    }
+
+    p::first-line{
+      color: red;
+    }
+
+    p::before{
+      content: "hello";
+    }
+
+    /*------ Group SELECTORS-------*/
+    h1,h2,h3{
+      color: #289706;
+    }
+  </style>
+
+  <body>
+    <h1>CSS-SELECTORS</h1>
+
+    =======1. Element selector =======
+
+    <h2>hello world</h2>
+    <h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere possimus
+      sapiente ullam aperiam, nobis, nihil ipsam maiores optio sequi dignissimos
+      deleniti eius atque eveniet nesciunt provident animi excepturi vero? Cum.
+    </h3>
+    <h2>hello world</h2>
+
+    =======2. Class selector =======
+    <br />
+
+    😂❤️😍😒👍😁💕😘👌😊😂🤣❤️😍😒🙌👍😁💕😘👌
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+    =======3. Id selector =======
+
+    <br />
+    😂❤️😍😒👍😁💕😘👌😊😂🤣❤️😍😒🙌👍😁💕😘👌
+
+    <p id="main-paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem nam
+      aliquam tempore beatae voluptas neque veritatis sit, exercitationem ipsam
+      corporis excepturi sequi voluptate, blanditiis praesentium quaerat veniam
+      totam animi. Fuga hic impedit corrupti omnis nihil ipsa quae. Neque
+      debitis ipsum id explicabo reiciendis magni et amet sint quasi, vitae in,
+      ratione voluptatibus eveniet dolor qui iusto. Dolor sequi, dolorum, alias
+      sint soluta consectetur architecto in voluptas, enim nisi optio dicta ipsa
+      voluptatem tempore. Accusantium iure perspiciatis aliquid a omnis,
+      sapiente impedit nesciunt quos rem nulla eveniet minima odio deserunt aut
+      esse maiores fugiat cumque quisquam aliquam voluptas temporibus ducimus
+      ipsa.
+    </p>
+
+    =========4. Attribute selector =========
+    <br />
+    😂❤️😍😒👍😁💕😘👌😊😂🤣❤️😍😒🙌👍😁💕😘👌
+
+    <br />
+    <br />
+    <a href="https://www.google.com/" target="_blank">Google.com</a>
+
+    <br />
+    <br />
+
+    =======5. Descendant selector =========
+
+    <br />
+    <div>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <br />
+    <br />
+
+    =======6. Child selector =========
+
+    <br />
+    <ul>
+      <li>nknknk</li>
+      <li>jbjbjubnk</li>
+      <li>hygygu</li>
+      <li>jbjbj</li>
+      <li>ihnij</li>
+    </ul>
+
+    <br />
+    <br />
+
+    =======7. Adjacent sibling selector =========
+
+    <br />
+    <h2>Adajacent sibling</h2>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+
+    <br />
+    <br />
+
+    =======8. General sibling selector =========
+
+
+    <br />
+    <h1>General sibling</h1>
+    <p>Hello One</p>
+    <p>Hello Two</p>
+    <div><p>Hello Three</p>
+
+    <br />
+    <br />
+
+    =======9. Pseudo-class selector =========           
+
+    <br />  
+    <ul>
+      <li>nknknk</li>
+      <li>jbjbjubnk</li>
+      <li>hygygu</li>
+      <li>jbjbj</li>
+      <li>ihnij</li>
+    </ul>
+
+    <br />
+    <br />
+
+    =======10. Pseudo-elements selector =========
+
+    <br />
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam iure error unde soluta fuga dolorum iusto impedit doloremque, officiis facilis? Fuga odio mollitia doloremque architecto magnam itaque voluptatibus reprehenderit nostrum placeat ab. Nostrum quod sunt deleniti, eum quidem ex eveniet aliquid veniam vero mollitia suscipit perspiciatis harum odio, accusantium deserunt?</p>
+
+
+    =======11.Gropuing selector =========
+
+    <br />
+    <h1>Grouping selector</h1>
+    <h2>Hello One</h2>
+    <h3>Hello Two</h3>
+  </body>
+</html>

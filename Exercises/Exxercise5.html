@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Students Form</h1>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <br />
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+            <br />
+            <label for="Phone Number">Phone Number</label>
+            <input type="number" id="number" name="number" maxlength="10">
+            <br />
+            <label for="radio">Male</label>
+            <input type="radio" name="gender" id="Male" />
+            <label for="radio">Female</label>
+            <input type="radio" name="gender" id="Female" />
+            
+        </fieldset>
+<br />
+<fieldset>
+    <legend>Preferences</legend>
+    <label for="checkbox">Subscribe to newsletter</label>
+    <input type="checkbox" name="checkbox" id="checkbox" />
+    <label for="select">Choose Language</label>
+    <select name="Language" id="lang">
+      <option value="english">English</option>
+      <option value="sinhala">Sinhala</option>
+      <option value="Tamil">Tamil</option>
+    </select>
+    <br />
+    <br />
+    <textarea name="message" id="message" cols="250" rows="6" placeholder="Enter your message"></textarea>
+
+</fieldset>
+<br />
+        <input type="submit" value="Submit">
+    </form>
+    
+</body>
+</html>

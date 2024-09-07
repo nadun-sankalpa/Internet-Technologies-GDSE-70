@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <table style="width: 400px; height: 400px">
+      <thead>
+        <tr style width="100px align = center">
+          <th colspan="4">Personal information</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name :</td>
+          <td colspan="3">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Age :</td>
+          <td colspan="3">
+            <input
+              type="number"
+              id="age"
+              name="age"
+              placeholder="Enter your age"
+            />
+          </td>
+        </tr>
+        <tr style width="100px">
+          <td rowspan="3">Address</td>
+          
+          <td>Street</td> 
+          <td> <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your street"
+          /></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td><input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your City"
+          /></td>
+        </tr>
+        <tr>
+          <td>Zip Code</td>
+          <td><input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your ZipCode"
+          /></td>
+        </tr>
+          <tr>
+            <td colspan="4"><b>Additional Information</b></td>
+          </tr>
+          <tr>
+            <td colspan="4"> <textarea name="message" id="message" cols="45" rows="8" placeholder="Enter your message"></textarea></td>
+
+          <tfoot>
+            <tr>
+              <td colspan="4"><button type="submit">Submit</button></td>
+            </tr>
+          </tfoot>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
